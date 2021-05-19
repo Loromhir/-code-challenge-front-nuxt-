@@ -3,7 +3,7 @@ require('dotenv').config()
 const URL_API = 'http'+ (process.env.API_SSL ? 's' : '') + '://' + (process.env.API_HOST || '') + '/'
 const URL_APP = 'http' + (process.env.APP_SSL ? 's' : '') + '://' + (process.env.APP_HOST || '') + '/'
 const APP_ENV = process.env.APP_ENV
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 
 export default {
   
